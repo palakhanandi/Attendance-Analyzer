@@ -14,7 +14,7 @@ if uploaded_file:
     df = pd.read_csv(uploaded_file)
 else:
     st.info("Using sample data. Upload your own for custom results.")
-    df = pd.read_csv("sample_attendance.csv")
+    df = pd.read_csv("sample_attendance(2).csv")
 
 if 'Overall %' not in df.columns:
     # Calculate attendance percentage
